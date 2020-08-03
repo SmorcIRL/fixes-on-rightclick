@@ -1,0 +1,47 @@
+{
+	"name": "fixes-on-rightclick",
+	"displayName": "fixes-on-rightclick",
+	"description": "Adds \"Show Fixes\" option on top of the editor context menu, as Visual Studio does it",
+	"version": "0.0.1",
+	"publisher": "SmorcIRL",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "FixesOnRMB.showFixes",
+				"title": "Show Fixes"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "FixesOnRMB.showFixes",
+					"group": "navigation@0"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.47.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3"
+	}
+}
