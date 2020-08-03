@@ -1,8 +1,12 @@
 {
 	"name": "fixes-on-rightclick",
-	"displayName": "fixes-on-rightclick",
+	"displayName": "Show Fixes on right-click",
 	"description": "Adds \"Show Fixes\" option on top of the editor context menu, as Visual Studio does it",
 	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SmorcIRL/fixes-on-rightclick.git"
+	},
 	"publisher": "SmorcIRL",
 	"engines": {
 		"vscode": "^1.47.0"
